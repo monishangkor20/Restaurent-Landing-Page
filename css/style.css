@@ -1,0 +1,375 @@
+body{
+    background: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+nav {
+    background: #000000;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_menu .menu{}
+.main_menu .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.main_menu .menu ul li{}
+.main_menu .menu ul li a{
+    padding: 16px 18px;
+    color: #ffffff;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.buttons button{
+    background: transparent;
+    border: none;
+}
+*{
+    font-family: inter;
+}
+
+/* 
+section srtart
+*/
+#banner{
+    background: url(../images/burger\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.overlay{
+background: linear-gradient(-270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 39.51%, rgba(0, 0, 0, 0) 60.42%, rgba(0, 0, 0, 0) 100%);
+height: calc(100vh - 104px);
+
+}
+.banner_content{
+    max-width: 652px;
+}
+.banner_content h1{
+    font-size: 66px;
+    line-height: 96px;
+    font-weight: 800;
+    color: #ffffff;
+    padding-top: 72px;
+    padding-bottom: 10px;
+}
+.banner_content span{
+    display: block;
+}
+.banner_content p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffffad;
+    padding-bottom: 40px;
+}
+.banner_content button{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 40px;
+    box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+/* 
+section end
+*/
+
+/*
+ About Section Start 
+ */
+ #about{}
+ .about_content{
+    width: 820px;
+    height: 146px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+ }
+ .about_content h2{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 16px;
+ }
+ .about_content p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+ }
+ .about_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 87px;
+    padding-top: 220px;
+ }
+ .about_grid p{
+    color: #ffffffb5;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+
+ }
+ .about_grid a{
+    color: #ffffff;
+    font: bold;
+ }
+ .about_grid .video{
+    position: relative;
+ }
+ .about_grid .video .image{
+ }
+ .about_grid .video .images img{
+ }
+ /* .about_grid .button{
+    height: 92px;
+    width: 92px;
+    background: #ffffff;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px,-50px);
+ } */
+ .about_grid .button img{}
+
+/*
+ About Section End 
+ */
+
+
+/* Delicious Menu Start */
+#delicious{
+    padding-top: 150px;
+}
+#delicious h2{
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#delicious .delicious_menu{
+    padding-bottom: 80px;
+}
+#delicious .delicious_menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 104px;
+}
+.delicious_menu ul li{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    list-style: none;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    
+}
+
+.delicious_menu ul li {
+    border-bottom: 3px solid #ffffff transparent;
+    border-radius: 0 0 10px 10px ;
+    padding: 8px 20px;
+}
+.delicious_menu ul li.aactive{
+    border-bottom: 3px solid #ffffff;
+    border-radius: 0 0 10px 10px ;
+
+}
+.delicious_menu ul li:hover{
+    
+    border-radius: 0 0 10px 10px ;
+    border-bottom: 3px solid #ffffff;
+}
+
+.delicious_card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding-bottom: 80px;
+}
+.delicious_card .card_items{
+        background: #191919;
+    border-radius: 12px;
+    padding: 20px;
+}
+.delicious_card .card_items .imagess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delicious_card .card_items .imagess img{
+
+}
+.delicious_card .card_items h3{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+
+}
+.delicious_card .card_items p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.delicious_card .card_items .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delicious_card .card_items .price h4{
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.delicious_card .card_items .price .carts{
+    border: 2px solid #ffffff;
+    height: 45px;
+    width: 45px;
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.delicious_card .card_items .price .carts img{
+}
+#delicious .delicious_card {
+}
+
+.see_all {
+    background: #ffffff;
+    width: 168px;
+    height: 68px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.see_all a{
+    color: #000000;
+
+} 
+/* Delicious Menu End  */
+
+/* 
+countdown section start
+*/
+#countdown{
+    padding-bottom: 150px;
+}
+.countdown_content{}
+.countdown_content h2{
+    font-size: 44px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 180px;
+}
+.countdown_content .countdown_number{}
+.countdown_content .countdown_number h3{
+    font-size: 56px;
+    line-height: 66px;
+    font-weight:bold;
+    color: #ffffff;
+    width: 270px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown_content .countdown_number p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+.countdown_grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:60px ;
+}
+/* 
+countdown section end
+*/
+
+/* Become Section Start */
+#become{}
+.become_content{
+}
+.become_content h2{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.become_content p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffffad;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.become_button{
+        background: #ffffff;
+    width: 295px;
+    height: 68px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.become_button a{
+    color: #000000;
+}
+/* Become Section End */
+
+/* Testmonial Section Start */
+/* Testmonial Section End */
